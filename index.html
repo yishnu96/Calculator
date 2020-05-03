@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="main">
+        <form name="form">
+            <input type="text" value="" id="textview">
+        </form>
+        <table>
+            <tr>
+                <td><input class="button special" type="button" value="C" onclick="clear()"></td>
+                <td><input class="button special" type="button" value="<" onclick="back()"></td>
+                <td><input class="button special" type="button" value="%" onclick="per()"></td>
+                <td><input class="button special" type="button" value="/" onclick="cal('/')"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="7" onclick="cal('7')"></td>
+                <td><input class="button" type="button" value="8" onclick="cal('8')"></td>
+                <td><input class="button" type="button" value="9" onclick="cal('9')"></td>
+                <td><input class="button special" type="button" value="x" onclick="cal('*')"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="4" onclick="cal('4')"></td>
+                <td><input class="button" type="button" value="5" onclick="cal('5')"></td>
+                <td><input class="button" type="button" value="6" onclick="cal('6')"></td>
+                <td><input class="button special" type="button" value="-" onclick="cal('-')"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="1" onclick="cal('1')"></td>
+                <td><input class="button" type="button" value="2" onclick="cal('2')"></td>
+                <td><input class="button" type="button" value="3" onclick="cal('3')"></td>
+                <td><input class="button special" type="button" value="+" onclick="cal('+')"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="0" onclick="cal('0')"></td>
+                <td><input class="button" type="button" value="." onclick="cal('.')"></td>
+                <td colspan="2"><input id="equals" class="button" type="button" value="=" onclick="equal()"></td>
+            </tr>
+            
+        </table>
+    </div>
+    <script type="text/javascript" src="jsfile.js"></script>
+</body>
+</html>
